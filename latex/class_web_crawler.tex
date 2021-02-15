@@ -1,0 +1,113 @@
+\hypertarget{class_web_crawler}{}\section{Web\+Crawler Class Reference}
+\label{class_web_crawler}\index{Web\+Crawler@{Web\+Crawler}}
+
+
+网络爬虫  
+
+
+
+
+{\ttfamily \#include $<$Web\+Crawler.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_web_crawler_ad8120b764c991bbf51764d47ea097b88}{Web\+Crawler} (\hyperlink{class_url_filter}{Url\+Filter} \&filter)
+\begin{DoxyCompactList}\small\item\em 构造器 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_web_crawler_a4f135eede21f8a08df3b4b86e7928f7b}\label{class_web_crawler_a4f135eede21f8a08df3b4b86e7928f7b}} 
+\hyperlink{class_web_crawler_a4f135eede21f8a08df3b4b86e7928f7b}{$\sim$\+Web\+Crawler} (void)
+\begin{DoxyCompactList}\small\item\em 析构器 \end{DoxyCompactList}\item 
+void \hyperlink{class_web_crawler_aa33817c1f415d3be793e7b43198d253e}{init} (bool daemon=false)
+\begin{DoxyCompactList}\small\item\em 初始化 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_web_crawler_a940428b71b32361953b241079c62b24d}\label{class_web_crawler_a940428b71b32361953b241079c62b24d}} 
+void \hyperlink{class_web_crawler_a940428b71b32361953b241079c62b24d}{exec} (void)
+\begin{DoxyCompactList}\small\item\em 执行多路输入输出循环 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_web_crawler_a6d21283f301038ee6aa5bc1bb57d1d7c}\label{class_web_crawler_a6d21283f301038ee6aa5bc1bb57d1d7c}} 
+void \hyperlink{class_web_crawler_a6d21283f301038ee6aa5bc1bb57d1d7c}{start\+Job} (void)
+\begin{DoxyCompactList}\small\item\em 启动一个抓取任务 \end{DoxyCompactList}\item 
+void \hyperlink{class_web_crawler_a7da15941a0fd20e1ae53d4077d61c9d4}{stop\+Job} (bool success=true)
+\begin{DoxyCompactList}\small\item\em 停止一个抓取任务 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_web_crawler_a94412c52ed3992adfb0195c0075e5e06}\label{class_web_crawler_a94412c52ed3992adfb0195c0075e5e06}} 
+\hyperlink{class_log}{Log} \hyperlink{class_web_crawler_a94412c52ed3992adfb0195c0075e5e06}{m\+\_\+log}
+\begin{DoxyCompactList}\small\item\em 日志 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_web_crawler_a02271762fedba90a0b00f8be65423de4}\label{class_web_crawler_a02271762fedba90a0b00f8be65423de4}} 
+\hyperlink{class_configurator}{Configurator} \hyperlink{class_web_crawler_a02271762fedba90a0b00f8be65423de4}{m\+\_\+cfg}
+\begin{DoxyCompactList}\small\item\em 配置器 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_web_crawler_a8492c84e209f4cbf733e939dd5cd5317}\label{class_web_crawler_a8492c84e209f4cbf733e939dd5cd5317}} 
+\hyperlink{class_multi_io}{Multi\+Io} \hyperlink{class_web_crawler_a8492c84e209f4cbf733e939dd5cd5317}{m\+\_\+multi\+Io}
+\begin{DoxyCompactList}\small\item\em 多路输入输出 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_web_crawler_af9ff344fb9447d40a32e40435882a075}\label{class_web_crawler_af9ff344fb9447d40a32e40435882a075}} 
+\hyperlink{class_plugin_mngr}{Plugin\+Mngr} \hyperlink{class_web_crawler_af9ff344fb9447d40a32e40435882a075}{m\+\_\+plugin\+Mngr}
+\begin{DoxyCompactList}\small\item\em 插件管理器 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_web_crawler_ab9a440531fbd41b43b4dd97654000dae}\label{class_web_crawler_ab9a440531fbd41b43b4dd97654000dae}} 
+\hyperlink{class_url_queues}{Url\+Queues} \hyperlink{class_web_crawler_ab9a440531fbd41b43b4dd97654000dae}{m\+\_\+url\+Queues}
+\begin{DoxyCompactList}\small\item\em 统一资源定位符队列 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_web_crawler_ada21f95fb073ea1f81c8c7853ace9c6e}\label{class_web_crawler_ada21f95fb073ea1f81c8c7853ace9c6e}} 
+\hyperlink{class_dns_thread}{Dns\+Thread} \hyperlink{class_web_crawler_ada21f95fb073ea1f81c8c7853ace9c6e}{m\+\_\+dns\+Thread}
+\begin{DoxyCompactList}\small\item\em 域名解析线程 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_web_crawler_ae5098d623339f79eaaf7dd5b69d64a60}\label{class_web_crawler_ae5098d623339f79eaaf7dd5b69d64a60}} 
+\hyperlink{class_send_thread}{Send\+Thread} \hyperlink{class_web_crawler_ae5098d623339f79eaaf7dd5b69d64a60}{m\+\_\+send\+Thread}
+\begin{DoxyCompactList}\small\item\em 发送线程 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+网络爬虫 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_web_crawler_ad8120b764c991bbf51764d47ea097b88}\label{class_web_crawler_ad8120b764c991bbf51764d47ea097b88}} 
+\index{Web\+Crawler@{Web\+Crawler}!Web\+Crawler@{Web\+Crawler}}
+\index{Web\+Crawler@{Web\+Crawler}!Web\+Crawler@{Web\+Crawler}}
+\subsubsection{\texorpdfstring{Web\+Crawler()}{WebCrawler()}}
+{\footnotesize\ttfamily Web\+Crawler\+::\+Web\+Crawler (\begin{DoxyParamCaption}\item[{\hyperlink{class_url_filter}{Url\+Filter} \&}]{filter }\end{DoxyParamCaption})}
+
+
+
+构造器 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filter} & 统一资源定位符过滤器 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_web_crawler_aa33817c1f415d3be793e7b43198d253e}\label{class_web_crawler_aa33817c1f415d3be793e7b43198d253e}} 
+\index{Web\+Crawler@{Web\+Crawler}!init@{init}}
+\index{init@{init}!Web\+Crawler@{Web\+Crawler}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Web\+Crawler\+::init (\begin{DoxyParamCaption}\item[{bool}]{daemon = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+初始化 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em daemon} & 是否以精灵进程方式运行 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_web_crawler_a7da15941a0fd20e1ae53d4077d61c9d4}\label{class_web_crawler_a7da15941a0fd20e1ae53d4077d61c9d4}} 
+\index{Web\+Crawler@{Web\+Crawler}!stop\+Job@{stop\+Job}}
+\index{stop\+Job@{stop\+Job}!Web\+Crawler@{Web\+Crawler}}
+\subsubsection{\texorpdfstring{stop\+Job()}{stopJob()}}
+{\footnotesize\ttfamily void Web\+Crawler\+::stop\+Job (\begin{DoxyParamCaption}\item[{bool}]{success = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+停止一个抓取任务 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em success} & 是否成功 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_web_crawler_8h}{Web\+Crawler.\+h}\item 
+src/\hyperlink{_web_crawler_8cpp}{Web\+Crawler.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{class_log}{}\section{Log Class Reference}
+\label{class_log}\index{Log@{Log}}
+
+
+日志  
+
+
+
+
+{\ttfamily \#include $<$Log.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_log_ab91d69d448051c3d127c0dac54b7869b}{printf} (int level, char const $\ast$file, int line, char const $\ast$format,...) const
+\begin{DoxyCompactList}\small\item\em 按格式打印日志 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_log_aa17bb8ca4d2192d32661c3c7ca05a3f6}\label{class_log_aa17bb8ca4d2192d32661c3c7ca05a3f6}} 
+static int const \hyperlink{class_log_aa17bb8ca4d2192d32661c3c7ca05a3f6}{L\+E\+V\+E\+L\+\_\+\+D\+BG} = 0
+\begin{DoxyCompactList}\small\item\em 日志等级 -\/ 调试 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_log_a858c5b18fa5ba2b3030c0e19396b1f29}\label{class_log_a858c5b18fa5ba2b3030c0e19396b1f29}} 
+static int const \hyperlink{class_log_a858c5b18fa5ba2b3030c0e19396b1f29}{L\+E\+V\+E\+L\+\_\+\+I\+NF} = 1
+\begin{DoxyCompactList}\small\item\em 日志等级 -\/ 信息 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_log_a944495af10e73c8aabfa5b8ec5790c33}\label{class_log_a944495af10e73c8aabfa5b8ec5790c33}} 
+static int const \hyperlink{class_log_a944495af10e73c8aabfa5b8ec5790c33}{L\+E\+V\+E\+L\+\_\+\+W\+AR} = 2
+\begin{DoxyCompactList}\small\item\em 日志等级 -\/ 警告 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_log_a0a37b6e34e4662db8a9c6797a83a7348}\label{class_log_a0a37b6e34e4662db8a9c6797a83a7348}} 
+static int const \hyperlink{class_log_a0a37b6e34e4662db8a9c6797a83a7348}{L\+E\+V\+E\+L\+\_\+\+E\+RR} = 3
+\begin{DoxyCompactList}\small\item\em 日志等级 -\/ 一般错误 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_log_a4ec0940f19651e80e6852da6c7069916}\label{class_log_a4ec0940f19651e80e6852da6c7069916}} 
+static int const \hyperlink{class_log_a4ec0940f19651e80e6852da6c7069916}{L\+E\+V\+E\+L\+\_\+\+C\+RT} = 4
+\begin{DoxyCompactList}\small\item\em 日志等级 -\/ 致命错误 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+日志 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_log_ab91d69d448051c3d127c0dac54b7869b}\label{class_log_ab91d69d448051c3d127c0dac54b7869b}} 
+\index{Log@{Log}!printf@{printf}}
+\index{printf@{printf}!Log@{Log}}
+\subsubsection{\texorpdfstring{printf()}{printf()}}
+{\footnotesize\ttfamily void Log\+::printf (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{char const $\ast$}]{file,  }\item[{int}]{line,  }\item[{char const $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption}) const}
+
+
+
+按格式打印日志 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em level} & 日志等级 \\
+\hline
+\mbox{\tt in}  & {\em file} & 源码文件 \\
+\hline
+\mbox{\tt in}  & {\em line} & 源码行号 \\
+\hline
+\mbox{\tt in}  & {\em format} & 格式化串 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_log_8h}{Log.\+h}\item 
+src/\hyperlink{_log_8cpp}{Log.\+cpp}\end{DoxyCompactItemize}

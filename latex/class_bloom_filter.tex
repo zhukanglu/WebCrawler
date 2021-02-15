@@ -1,0 +1,66 @@
+\hypertarget{class_bloom_filter}{}\section{Bloom\+Filter Class Reference}
+\label{class_bloom_filter}\index{Bloom\+Filter@{Bloom\+Filter}}
+
+
+布隆过滤器  
+
+
+
+
+{\ttfamily \#include $<$Bloom\+Filter.\+h$>$}
+
+Inheritance diagram for Bloom\+Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bloom_filter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bloom_filter_a4e78efdfb6b1a240ab58d9f1cdea3c48}\label{class_bloom_filter_a4e78efdfb6b1a240ab58d9f1cdea3c48}} 
+\hyperlink{class_bloom_filter_a4e78efdfb6b1a240ab58d9f1cdea3c48}{Bloom\+Filter} (void)
+\begin{DoxyCompactList}\small\item\em 构造器 \end{DoxyCompactList}\item 
+bool \hyperlink{class_bloom_filter_a78a992167b8efbc3be672469e68c5e97}{exist} (string const \&str\+Url)
+\begin{DoxyCompactList}\small\item\em 判断某个统一资源定位符是否已经存在 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+布隆过滤器 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bloom_filter_a78a992167b8efbc3be672469e68c5e97}\label{class_bloom_filter_a78a992167b8efbc3be672469e68c5e97}} 
+\index{Bloom\+Filter@{Bloom\+Filter}!exist@{exist}}
+\index{exist@{exist}!Bloom\+Filter@{Bloom\+Filter}}
+\subsubsection{\texorpdfstring{exist()}{exist()}}
+{\footnotesize\ttfamily bool Bloom\+Filter\+::exist (\begin{DoxyParamCaption}\item[{string const \&}]{str\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+判断某个统一资源定位符是否已经存在 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 存在 \\
+\hline
+{\em false} & 不存在，同时将其加入布隆表 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+根据布隆过滤器的策略实现基类中的纯虚函数 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str\+Url} & 统一资源定位符 \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_url_filter_a581b9ea03daefbf52344ceb3371f409a}{Url\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_bloom_filter_8h}{Bloom\+Filter.\+h}\item 
+src/\hyperlink{_bloom_filter_8cpp}{Bloom\+Filter.\+cpp}\end{DoxyCompactItemize}

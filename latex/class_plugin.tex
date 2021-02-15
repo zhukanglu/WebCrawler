@@ -1,0 +1,82 @@
+\hypertarget{class_plugin}{}\section{Plugin Class Reference}
+\label{class_plugin}\index{Plugin@{Plugin}}
+
+
+插件接口  
+
+
+
+
+{\ttfamily \#include $<$Plugin.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_plugin_a14edb40a1a126f4a30496bc5c1724b88}\label{class_plugin_a14edb40a1a126f4a30496bc5c1724b88}} 
+virtual \hyperlink{class_plugin_a14edb40a1a126f4a30496bc5c1724b88}{$\sim$\+Plugin} (void)
+\begin{DoxyCompactList}\small\item\em 析构器 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_plugin_a5473f4276b9992fdaecdd0bc6db60d37}{init} (\hyperlink{class_web_crawler}{Web\+Crawler} $\ast$app)=0
+\begin{DoxyCompactList}\small\item\em 插件初始化 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_plugin_a12c99361b63a4b808b6bbe40d1a5de1d}{handler} (void $\ast$arg)=0
+\begin{DoxyCompactList}\small\item\em 插件处理 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+插件接口 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plugin_a12c99361b63a4b808b6bbe40d1a5de1d}\label{class_plugin_a12c99361b63a4b808b6bbe40d1a5de1d}} 
+\index{Plugin@{Plugin}!handler@{handler}}
+\index{handler@{handler}!Plugin@{Plugin}}
+\subsubsection{\texorpdfstring{handler()}{handler()}}
+{\footnotesize\ttfamily virtual bool Plugin\+::handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+插件处理 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 成功 \\
+\hline
+{\em false} & 失败 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+纯虚函数，子类根据不同插件的具体功能给出具体实现 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em arg} & 插件参数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plugin_a5473f4276b9992fdaecdd0bc6db60d37}\label{class_plugin_a5473f4276b9992fdaecdd0bc6db60d37}} 
+\index{Plugin@{Plugin}!init@{init}}
+\index{init@{init}!Plugin@{Plugin}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual bool Plugin\+::init (\begin{DoxyParamCaption}\item[{\hyperlink{class_web_crawler}{Web\+Crawler} $\ast$}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+插件初始化 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 成功 \\
+\hline
+{\em false} & 失败 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+纯虚函数，子类根据不同的插件功能给出具体实现 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em app} & 应用程序对象 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_plugin_8h}{Plugin.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{_main_8cpp}{}\section{src/\+Main.cpp File Reference}
+\label{_main_8cpp}\index{src/\+Main.\+cpp@{src/\+Main.\+cpp}}
+
+
+定义\+::main函数  
+
+
+{\ttfamily \#include \char`\"{}Precompile.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Web\+Crawler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bloom\+Filter.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em 进程入口函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_main_8cpp_aec5109baf80c5e8540aad9d2a6ba1566}\label{_main_8cpp_aec5109baf80c5e8540aad9d2a6ba1566}} 
+\hyperlink{class_bloom_filter}{Bloom\+Filter} {\bfseries g\+\_\+filter}
+\item 
+\mbox{\Hypertarget{_main_8cpp_a8e826eac7119c7ebc0db05cdef6812c7}\label{_main_8cpp_a8e826eac7119c7ebc0db05cdef6812c7}} 
+\hyperlink{class_web_crawler}{Web\+Crawler} $\ast$ \hyperlink{_main_8cpp_a8e826eac7119c7ebc0db05cdef6812c7}{g\+\_\+app} = new \hyperlink{class_web_crawler}{Web\+Crawler} (g\+\_\+filter)
+\begin{DoxyCompactList}\small\item\em 应用程序对象 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+定义\+::main函数 
+
+\begin{DoxyAuthor}{Author}
+闵卫 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2015年11月20日 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0.\+1 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{_main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{Main.\+cpp@{Main.\+cpp}!main@{main}}
+\index{main@{main}!Main.\+cpp@{Main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+进程入口函数 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+SS} & 进程成功退出 \\
+\hline
+{\em E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+RE} & 进程失败退出 \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em argc} & 命令行参数个数 \\
+\hline
+\mbox{\tt in}  & {\em argv} & 命令行参数列表 \\
+\hline
+\end{DoxyParams}

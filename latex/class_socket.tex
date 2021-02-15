@@ -1,0 +1,102 @@
+\hypertarget{class_socket}{}\section{Socket Class Reference}
+\label{class_socket}\index{Socket@{Socket}}
+
+
+套接字  
+
+
+
+
+{\ttfamily \#include $<$Socket.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_socket_a57f6077d6f5db44a5eb8624463ed99e4}{Socket} (\hyperlink{class_dns_url}{Dns\+Url} const \&dns\+Url)
+\begin{DoxyCompactList}\small\item\em 构造器 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_socket_a763aae809efa471def8e7918281c3a1c}\label{class_socket_a763aae809efa471def8e7918281c3a1c}} 
+\hyperlink{class_socket_a763aae809efa471def8e7918281c3a1c}{$\sim$\+Socket} (void)
+\begin{DoxyCompactList}\small\item\em 析构器 \end{DoxyCompactList}\item 
+bool \hyperlink{class_socket_acfc00252e4e40f68442a4b28fc5b32b3}{send\+Request} (void)
+\begin{DoxyCompactList}\small\item\em 发送超文本传输协议请求 \end{DoxyCompactList}\item 
+bool \hyperlink{class_socket_aa935a43a54d0ac03505b2ab32c095b99}{recv\+Response} (void)
+\begin{DoxyCompactList}\small\item\em 接收超文本传输协议响应 \end{DoxyCompactList}\item 
+int \hyperlink{class_socket_a427f1295ef1fce2c69e0b9a093fd0284}{sockfd} (void) const
+\begin{DoxyCompactList}\small\item\em 获取套接字描述符 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+套接字 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_socket_a57f6077d6f5db44a5eb8624463ed99e4}\label{class_socket_a57f6077d6f5db44a5eb8624463ed99e4}} 
+\index{Socket@{Socket}!Socket@{Socket}}
+\index{Socket@{Socket}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{Socket()}{Socket()}}
+{\footnotesize\ttfamily Socket\+::\+Socket (\begin{DoxyParamCaption}\item[{\hyperlink{class_dns_url}{Dns\+Url} const \&}]{dns\+Url }\end{DoxyParamCaption})}
+
+
+
+构造器 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dns\+Url} & 服务器统一资源定位符 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_socket_aa935a43a54d0ac03505b2ab32c095b99}\label{class_socket_aa935a43a54d0ac03505b2ab32c095b99}} 
+\index{Socket@{Socket}!recv\+Response@{recv\+Response}}
+\index{recv\+Response@{recv\+Response}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{recv\+Response()}{recvResponse()}}
+{\footnotesize\ttfamily bool Socket\+::recv\+Response (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+接收超文本传输协议响应 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 成功 \\
+\hline
+{\em false} & 失败 \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_socket_acfc00252e4e40f68442a4b28fc5b32b3}\label{class_socket_acfc00252e4e40f68442a4b28fc5b32b3}} 
+\index{Socket@{Socket}!send\+Request@{send\+Request}}
+\index{send\+Request@{send\+Request}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{send\+Request()}{sendRequest()}}
+{\footnotesize\ttfamily bool Socket\+::send\+Request (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+发送超文本传输协议请求 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 成功 \\
+\hline
+{\em false} & 失败 \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_socket_a427f1295ef1fce2c69e0b9a093fd0284}\label{class_socket_a427f1295ef1fce2c69e0b9a093fd0284}} 
+\index{Socket@{Socket}!sockfd@{sockfd}}
+\index{sockfd@{sockfd}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{sockfd()}{sockfd()}}
+{\footnotesize\ttfamily int Socket\+::sockfd (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+获取套接字描述符 
+
+\begin{DoxyReturn}{Returns}
+套接字描述符 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_socket_8h}{Socket.\+h}\item 
+src/\hyperlink{_socket_8cpp}{Socket.\+cpp}\end{DoxyCompactItemize}

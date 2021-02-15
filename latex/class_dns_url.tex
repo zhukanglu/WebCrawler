@@ -1,0 +1,107 @@
+\hypertarget{class_dns_url}{}\section{Dns\+Url Class Reference}
+\label{class_dns_url}\index{Dns\+Url@{Dns\+Url}}
+
+
+解析统一资源定位符  
+
+
+
+
+{\ttfamily \#include $<$Url.\+h$>$}
+
+Inheritance diagram for Dns\+Url\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dns_url}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dns_url_a755c96cfb2eb70b9a39585553424f435}{Dns\+Url} (\hyperlink{class_raw_url}{Raw\+Url} const \&raw\+Url)
+\begin{DoxyCompactList}\small\item\em 构造器 \end{DoxyCompactList}\item 
+string \hyperlink{class_dns_url_a74cec9202ecf7631d02f53dcc498a4c6}{to\+Filename} (void) const
+\begin{DoxyCompactList}\small\item\em 转换为文件名字符串 \end{DoxyCompactList}\item 
+bool \hyperlink{class_dns_url_a96e4aa0b84d4bf4a693eed04ea7de4ca}{attach\+Domain} (string \&str\+Url) const
+\begin{DoxyCompactList}\small\item\em 添加域名 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dns_url_ad9f701802bbd22f6d6be49dc79a00eb5}\label{class_dns_url_ad9f701802bbd22f6d6be49dc79a00eb5}} 
+string \hyperlink{class_dns_url_ad9f701802bbd22f6d6be49dc79a00eb5}{m\+\_\+domain}
+\begin{DoxyCompactList}\small\item\em 服务器域名 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dns_url_ae7833d53958fbaab4de95d4406c5943d}\label{class_dns_url_ae7833d53958fbaab4de95d4406c5943d}} 
+string \hyperlink{class_dns_url_ae7833d53958fbaab4de95d4406c5943d}{m\+\_\+path}
+\begin{DoxyCompactList}\small\item\em 资源路径 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dns_url_a10a0576c9e2fb2a9179f27e10a3dc3ef}\label{class_dns_url_a10a0576c9e2fb2a9179f27e10a3dc3ef}} 
+string \hyperlink{class_dns_url_a10a0576c9e2fb2a9179f27e10a3dc3ef}{m\+\_\+ip}
+\begin{DoxyCompactList}\small\item\em 服务器\+I\+P地址 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dns_url_a471067dc236c12e337f7b25e771f2f74}\label{class_dns_url_a471067dc236c12e337f7b25e771f2f74}} 
+short \hyperlink{class_dns_url_a471067dc236c12e337f7b25e771f2f74}{m\+\_\+port}
+\begin{DoxyCompactList}\small\item\em 服务器通信端口 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+解析统一资源定位符 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dns_url_a755c96cfb2eb70b9a39585553424f435}\label{class_dns_url_a755c96cfb2eb70b9a39585553424f435}} 
+\index{Dns\+Url@{Dns\+Url}!Dns\+Url@{Dns\+Url}}
+\index{Dns\+Url@{Dns\+Url}!Dns\+Url@{Dns\+Url}}
+\subsubsection{\texorpdfstring{Dns\+Url()}{DnsUrl()}}
+{\footnotesize\ttfamily Dns\+Url\+::\+Dns\+Url (\begin{DoxyParamCaption}\item[{\hyperlink{class_raw_url}{Raw\+Url} const \&}]{raw\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+构造器 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em raw\+Url} & 原始统一资源定位符 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dns_url_a96e4aa0b84d4bf4a693eed04ea7de4ca}\label{class_dns_url_a96e4aa0b84d4bf4a693eed04ea7de4ca}} 
+\index{Dns\+Url@{Dns\+Url}!attach\+Domain@{attach\+Domain}}
+\index{attach\+Domain@{attach\+Domain}!Dns\+Url@{Dns\+Url}}
+\subsubsection{\texorpdfstring{attach\+Domain()}{attachDomain()}}
+{\footnotesize\ttfamily bool Dns\+Url\+::attach\+Domain (\begin{DoxyParamCaption}\item[{string \&}]{str\+Url }\end{DoxyParamCaption}) const}
+
+
+
+添加域名 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 成功 \\
+\hline
+{\em false} & 失败 \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em str\+Url} & 待加域名统一资源定位符字符串 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dns_url_a74cec9202ecf7631d02f53dcc498a4c6}\label{class_dns_url_a74cec9202ecf7631d02f53dcc498a4c6}} 
+\index{Dns\+Url@{Dns\+Url}!to\+Filename@{to\+Filename}}
+\index{to\+Filename@{to\+Filename}!Dns\+Url@{Dns\+Url}}
+\subsubsection{\texorpdfstring{to\+Filename()}{toFilename()}}
+{\footnotesize\ttfamily string Dns\+Url\+::to\+Filename (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+转换为文件名字符串 
+
+\begin{DoxyReturn}{Returns}
+文件名字符串 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_url_8h}{Url.\+h}\item 
+src/\hyperlink{_url_8cpp}{Url.\+cpp}\end{DoxyCompactItemize}

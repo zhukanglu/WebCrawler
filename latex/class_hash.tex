@@ -1,0 +1,157 @@
+\hypertarget{class_hash}{}\section{Hash Class Reference}
+\label{class_hash}\index{Hash@{Hash}}
+
+
+哈希器  
+
+
+
+
+{\ttfamily \#include $<$Hash.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hash_a73664aa35c78765aff5ef005db70d245}\label{class_hash_a73664aa35c78765aff5ef005db70d245}} 
+\hyperlink{class_hash_a73664aa35c78765aff5ef005db70d245}{Hash} (void)
+\begin{DoxyCompactList}\small\item\em 构造器 \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_hash_a0600339cc7fef22914aab8e066f91fae}{times33} (string const \&str) const
+\begin{DoxyCompactList}\small\item\em Times33哈希算法 \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_hash_a67ee2152ea8e40b60b2c395c83cecc6f}{timesnum} (string const \&str, int num) const
+\begin{DoxyCompactList}\small\item\em Times\+N哈希算法 \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_hash_a05d68fb8603e00eb7b2bce77fd6539c5}{aphash} (string const \&str) const
+\begin{DoxyCompactList}\small\item\em A\+P哈希算法 \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_hash_a87064dbb105ec1193050067e1eb564f5}{hash16777619} (string const \&str) const
+\begin{DoxyCompactList}\small\item\em F\+N\+V哈希算法 \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_hash_a1a557f44997810270c6d753802a22743}{mysqlhash} (string const \&str) const
+\begin{DoxyCompactList}\small\item\em My\+S\+Q\+L哈希算法 \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_hash_afc6d940f27dc7f056cd41c171bd46b4c}{crc32} (string const \&str) const
+\begin{DoxyCompactList}\small\item\em 循环冗余校验算法 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+哈希器 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hash_a05d68fb8603e00eb7b2bce77fd6539c5}\label{class_hash_a05d68fb8603e00eb7b2bce77fd6539c5}} 
+\index{Hash@{Hash}!aphash@{aphash}}
+\index{aphash@{aphash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{aphash()}{aphash()}}
+{\footnotesize\ttfamily unsigned int Hash\+::aphash (\begin{DoxyParamCaption}\item[{string const \&}]{str }\end{DoxyParamCaption}) const}
+
+
+
+A\+P哈希算法 
+
+\begin{DoxyReturn}{Returns}
+参数字符串的32位哈希值 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & 被哈希字符串 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hash_afc6d940f27dc7f056cd41c171bd46b4c}\label{class_hash_afc6d940f27dc7f056cd41c171bd46b4c}} 
+\index{Hash@{Hash}!crc32@{crc32}}
+\index{crc32@{crc32}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{crc32()}{crc32()}}
+{\footnotesize\ttfamily unsigned int Hash\+::crc32 (\begin{DoxyParamCaption}\item[{string const \&}]{str }\end{DoxyParamCaption}) const}
+
+
+
+循环冗余校验算法 
+
+\begin{DoxyReturn}{Returns}
+参数字符串的循环冗余校验码 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & 被校验字符串 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hash_a87064dbb105ec1193050067e1eb564f5}\label{class_hash_a87064dbb105ec1193050067e1eb564f5}} 
+\index{Hash@{Hash}!hash16777619@{hash16777619}}
+\index{hash16777619@{hash16777619}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{hash16777619()}{hash16777619()}}
+{\footnotesize\ttfamily unsigned int Hash\+::hash16777619 (\begin{DoxyParamCaption}\item[{string const \&}]{str }\end{DoxyParamCaption}) const}
+
+
+
+F\+N\+V哈希算法 
+
+\begin{DoxyReturn}{Returns}
+参数字符串的32位哈希值 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & 被哈希字符串 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hash_a1a557f44997810270c6d753802a22743}\label{class_hash_a1a557f44997810270c6d753802a22743}} 
+\index{Hash@{Hash}!mysqlhash@{mysqlhash}}
+\index{mysqlhash@{mysqlhash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{mysqlhash()}{mysqlhash()}}
+{\footnotesize\ttfamily unsigned int Hash\+::mysqlhash (\begin{DoxyParamCaption}\item[{string const \&}]{str }\end{DoxyParamCaption}) const}
+
+
+
+My\+S\+Q\+L哈希算法 
+
+\begin{DoxyReturn}{Returns}
+参数字符串的32位哈希值 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & 被哈希字符串 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hash_a0600339cc7fef22914aab8e066f91fae}\label{class_hash_a0600339cc7fef22914aab8e066f91fae}} 
+\index{Hash@{Hash}!times33@{times33}}
+\index{times33@{times33}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{times33()}{times33()}}
+{\footnotesize\ttfamily unsigned int Hash\+::times33 (\begin{DoxyParamCaption}\item[{string const \&}]{str }\end{DoxyParamCaption}) const}
+
+
+
+Times33哈希算法 
+
+\begin{DoxyReturn}{Returns}
+参数字符串的32位哈希值 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+hash(i) = hash(i-\/1)×33+str\mbox{[}i\mbox{]} (hash(-\/1) = 0) 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & 被哈希字符串 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hash_a67ee2152ea8e40b60b2c395c83cecc6f}\label{class_hash_a67ee2152ea8e40b60b2c395c83cecc6f}} 
+\index{Hash@{Hash}!timesnum@{timesnum}}
+\index{timesnum@{timesnum}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{timesnum()}{timesnum()}}
+{\footnotesize\ttfamily unsigned int Hash\+::timesnum (\begin{DoxyParamCaption}\item[{string const \&}]{str,  }\item[{int}]{num }\end{DoxyParamCaption}) const}
+
+
+
+Times\+N哈希算法 
+
+\begin{DoxyReturn}{Returns}
+参数字符串的32位哈希值 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+hash(i) = hash(i-\/1)×\+N+str\mbox{[}i\mbox{]} (hash(-\/1) = 0) 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & 被哈希字符串 \\
+\hline
+\mbox{\tt in}  & {\em num} & N \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_hash_8h}{Hash.\+h}\item 
+src/\hyperlink{_hash_8cpp}{Hash.\+cpp}\end{DoxyCompactItemize}

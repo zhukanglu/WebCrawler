@@ -1,0 +1,163 @@
+\hypertarget{class_plugin_mngr}{}\section{Plugin\+Mngr Class Reference}
+\label{class_plugin_mngr}\index{Plugin\+Mngr@{Plugin\+Mngr}}
+
+
+插件管理器  
+
+
+
+
+{\ttfamily \#include $<$Plugin\+Mngr.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_plugin_mngr_a8fb487bb33fc83355d285231a86e4bf2}\label{class_plugin_mngr_a8fb487bb33fc83355d285231a86e4bf2}} 
+void \hyperlink{class_plugin_mngr_a8fb487bb33fc83355d285231a86e4bf2}{load} (void)
+\begin{DoxyCompactList}\small\item\em 加载插件 \end{DoxyCompactList}\item 
+void \hyperlink{class_plugin_mngr_a016ae68984aa3c04a32eaf29a334b5d5}{register\+Url\+Plugin} (\hyperlink{class_plugin}{Plugin} $\ast$plugin)
+\begin{DoxyCompactList}\small\item\em 注册统一资源定位符插件 \end{DoxyCompactList}\item 
+void \hyperlink{class_plugin_mngr_a4b1e91927684b2f976ca97fb441baeb7}{register\+Header\+Plugin} (\hyperlink{class_plugin}{Plugin} $\ast$plugin)
+\begin{DoxyCompactList}\small\item\em 注册超文本传输协议响应包头插件 \end{DoxyCompactList}\item 
+void \hyperlink{class_plugin_mngr_a27dbc387de2030fbdf6df8e61922a340}{register\+Html\+Plugin} (\hyperlink{class_plugin}{Plugin} $\ast$plugin)
+\begin{DoxyCompactList}\small\item\em 注册超文本标记语言插件 \end{DoxyCompactList}\item 
+bool \hyperlink{class_plugin_mngr_a28131538a70ca1ec9458d843efb0351c}{invoke\+Url\+Plugins} (void $\ast$arg) const
+\begin{DoxyCompactList}\small\item\em 调用统一资源定位符插件处理函数 \end{DoxyCompactList}\item 
+bool \hyperlink{class_plugin_mngr_ac3d8362f2197873631b3e4893e40dfcd}{invoke\+Header\+Plugins} (void $\ast$arg) const
+\begin{DoxyCompactList}\small\item\em 调用超文本传输协议响应包头插件处理函数 \end{DoxyCompactList}\item 
+void \hyperlink{class_plugin_mngr_ab1279ac48a5c4088b4caf61047d2574b}{invoke\+Html\+Plugins} (void $\ast$arg) const
+\begin{DoxyCompactList}\small\item\em 调用超文本标记语言插件处理函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+插件管理器 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plugin_mngr_ac3d8362f2197873631b3e4893e40dfcd}\label{class_plugin_mngr_ac3d8362f2197873631b3e4893e40dfcd}} 
+\index{Plugin\+Mngr@{Plugin\+Mngr}!invoke\+Header\+Plugins@{invoke\+Header\+Plugins}}
+\index{invoke\+Header\+Plugins@{invoke\+Header\+Plugins}!Plugin\+Mngr@{Plugin\+Mngr}}
+\subsubsection{\texorpdfstring{invoke\+Header\+Plugins()}{invokeHeaderPlugins()}}
+{\footnotesize\ttfamily bool Plugin\+Mngr\+::invoke\+Header\+Plugins (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption}) const}
+
+
+
+调用超文本传输协议响应包头插件处理函数 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 成功 \\
+\hline
+{\em false} & 失败 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyRemark}{Remarks}
+依次调用每个超文本传输协议响应包头插件处理函数，只要有一个失败即返回失败 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em arg} & 插件参数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plugin_mngr_ab1279ac48a5c4088b4caf61047d2574b}\label{class_plugin_mngr_ab1279ac48a5c4088b4caf61047d2574b}} 
+\index{Plugin\+Mngr@{Plugin\+Mngr}!invoke\+Html\+Plugins@{invoke\+Html\+Plugins}}
+\index{invoke\+Html\+Plugins@{invoke\+Html\+Plugins}!Plugin\+Mngr@{Plugin\+Mngr}}
+\subsubsection{\texorpdfstring{invoke\+Html\+Plugins()}{invokeHtmlPlugins()}}
+{\footnotesize\ttfamily void Plugin\+Mngr\+::invoke\+Html\+Plugins (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption}) const}
+
+
+
+调用超文本标记语言插件处理函数 
+
+\begin{DoxyRemark}{Remarks}
+依次调用每个超文本标记语言插件处理函数，忽略其成功失败 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em arg} & 插件参数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plugin_mngr_a28131538a70ca1ec9458d843efb0351c}\label{class_plugin_mngr_a28131538a70ca1ec9458d843efb0351c}} 
+\index{Plugin\+Mngr@{Plugin\+Mngr}!invoke\+Url\+Plugins@{invoke\+Url\+Plugins}}
+\index{invoke\+Url\+Plugins@{invoke\+Url\+Plugins}!Plugin\+Mngr@{Plugin\+Mngr}}
+\subsubsection{\texorpdfstring{invoke\+Url\+Plugins()}{invokeUrlPlugins()}}
+{\footnotesize\ttfamily bool Plugin\+Mngr\+::invoke\+Url\+Plugins (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption}) const}
+
+
+
+调用统一资源定位符插件处理函数 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 成功 \\
+\hline
+{\em false} & 失败 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyRemark}{Remarks}
+依次调用每个统一资源定位符插件处理函数，只要有一个失败即返回失败 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em arg} & 插件参数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plugin_mngr_a4b1e91927684b2f976ca97fb441baeb7}\label{class_plugin_mngr_a4b1e91927684b2f976ca97fb441baeb7}} 
+\index{Plugin\+Mngr@{Plugin\+Mngr}!register\+Header\+Plugin@{register\+Header\+Plugin}}
+\index{register\+Header\+Plugin@{register\+Header\+Plugin}!Plugin\+Mngr@{Plugin\+Mngr}}
+\subsubsection{\texorpdfstring{register\+Header\+Plugin()}{registerHeaderPlugin()}}
+{\footnotesize\ttfamily void Plugin\+Mngr\+::register\+Header\+Plugin (\begin{DoxyParamCaption}\item[{\hyperlink{class_plugin}{Plugin} $\ast$}]{plugin }\end{DoxyParamCaption})}
+
+
+
+注册超文本传输协议响应包头插件 
+
+\begin{DoxyRemark}{Remarks}
+超文本传输协议响应包头插件通过此接口将其自身注册到插件管理器中 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em plugin} & 超文本传输协议响应包头插件 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plugin_mngr_a27dbc387de2030fbdf6df8e61922a340}\label{class_plugin_mngr_a27dbc387de2030fbdf6df8e61922a340}} 
+\index{Plugin\+Mngr@{Plugin\+Mngr}!register\+Html\+Plugin@{register\+Html\+Plugin}}
+\index{register\+Html\+Plugin@{register\+Html\+Plugin}!Plugin\+Mngr@{Plugin\+Mngr}}
+\subsubsection{\texorpdfstring{register\+Html\+Plugin()}{registerHtmlPlugin()}}
+{\footnotesize\ttfamily void Plugin\+Mngr\+::register\+Html\+Plugin (\begin{DoxyParamCaption}\item[{\hyperlink{class_plugin}{Plugin} $\ast$}]{plugin }\end{DoxyParamCaption})}
+
+
+
+注册超文本标记语言插件 
+
+\begin{DoxyRemark}{Remarks}
+超文本标记语言插件通过此接口将其自身注册到插件管理器中 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em plugin} & 超文本标记语言插件 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plugin_mngr_a016ae68984aa3c04a32eaf29a334b5d5}\label{class_plugin_mngr_a016ae68984aa3c04a32eaf29a334b5d5}} 
+\index{Plugin\+Mngr@{Plugin\+Mngr}!register\+Url\+Plugin@{register\+Url\+Plugin}}
+\index{register\+Url\+Plugin@{register\+Url\+Plugin}!Plugin\+Mngr@{Plugin\+Mngr}}
+\subsubsection{\texorpdfstring{register\+Url\+Plugin()}{registerUrlPlugin()}}
+{\footnotesize\ttfamily void Plugin\+Mngr\+::register\+Url\+Plugin (\begin{DoxyParamCaption}\item[{\hyperlink{class_plugin}{Plugin} $\ast$}]{plugin }\end{DoxyParamCaption})}
+
+
+
+注册统一资源定位符插件 
+
+\begin{DoxyRemark}{Remarks}
+统一资源定位符插件通过此接口将其自身注册到插件管理器中 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em plugin} & 统一资源定位符插件 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_plugin_mngr_8h}{Plugin\+Mngr.\+h}\item 
+src/\hyperlink{_plugin_mngr_8cpp}{Plugin\+Mngr.\+cpp}\end{DoxyCompactItemize}

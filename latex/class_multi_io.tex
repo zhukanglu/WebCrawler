@@ -1,0 +1,114 @@
+\hypertarget{class_multi_io}{}\section{Multi\+Io Class Reference}
+\label{class_multi_io}\index{Multi\+Io@{Multi\+Io}}
+
+
+多路输入输出  
+
+
+
+
+{\ttfamily \#include $<$Multi\+Io.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_multi_io_a36b33c460c20e55f060cd7a5d45cf987}\label{class_multi_io_a36b33c460c20e55f060cd7a5d45cf987}} 
+\hyperlink{class_multi_io_a36b33c460c20e55f060cd7a5d45cf987}{Multi\+Io} (void)
+\begin{DoxyCompactList}\small\item\em 构造器 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_multi_io_adb76f15666679c952f2f5ac8a46fe457}\label{class_multi_io_adb76f15666679c952f2f5ac8a46fe457}} 
+\hyperlink{class_multi_io_adb76f15666679c952f2f5ac8a46fe457}{$\sim$\+Multi\+Io} (void)
+\begin{DoxyCompactList}\small\item\em 析构器 \end{DoxyCompactList}\item 
+bool \hyperlink{class_multi_io_abfbf48636d495e4d8031b111aa39b292}{add} (int fd, epoll\+\_\+event \&event) const
+\begin{DoxyCompactList}\small\item\em 增加需要被关注的输入输出事件 \end{DoxyCompactList}\item 
+bool \hyperlink{class_multi_io_a2d87b0b65a615623a53477fbef0eeced}{del} (int fd, epoll\+\_\+event \&event) const
+\begin{DoxyCompactList}\small\item\em 删除需要被关注的输入输出事件 \end{DoxyCompactList}\item 
+int \hyperlink{class_multi_io_af42ad1d3a228e514b0c1536ab5f276d2}{wait} (epoll\+\_\+event events\mbox{[}$\,$\mbox{]}, int max, int timeout) const
+\begin{DoxyCompactList}\small\item\em 等待所关注输入输出事件的发生 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+多路输入输出 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_multi_io_abfbf48636d495e4d8031b111aa39b292}\label{class_multi_io_abfbf48636d495e4d8031b111aa39b292}} 
+\index{Multi\+Io@{Multi\+Io}!add@{add}}
+\index{add@{add}!Multi\+Io@{Multi\+Io}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily bool Multi\+Io\+::add (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{epoll\+\_\+event \&}]{event }\end{DoxyParamCaption}) const}
+
+
+
+增加需要被关注的输入输出事件 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 成功 \\
+\hline
+{\em false} & 失败 \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fd} & 发生输入输出事件的文件描述符 \\
+\hline
+\mbox{\tt in}  & {\em event} & 事件描述结构 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_multi_io_a2d87b0b65a615623a53477fbef0eeced}\label{class_multi_io_a2d87b0b65a615623a53477fbef0eeced}} 
+\index{Multi\+Io@{Multi\+Io}!del@{del}}
+\index{del@{del}!Multi\+Io@{Multi\+Io}}
+\subsubsection{\texorpdfstring{del()}{del()}}
+{\footnotesize\ttfamily bool Multi\+Io\+::del (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{epoll\+\_\+event \&}]{event }\end{DoxyParamCaption}) const}
+
+
+
+删除需要被关注的输入输出事件 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 成功 \\
+\hline
+{\em false} & 失败 \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fd} & 发生输入输出事件的文件描述符 \\
+\hline
+\mbox{\tt in}  & {\em event} & 事件描述结构 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_multi_io_af42ad1d3a228e514b0c1536ab5f276d2}\label{class_multi_io_af42ad1d3a228e514b0c1536ab5f276d2}} 
+\index{Multi\+Io@{Multi\+Io}!wait@{wait}}
+\index{wait@{wait}!Multi\+Io@{Multi\+Io}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily int Multi\+Io\+::wait (\begin{DoxyParamCaption}\item[{epoll\+\_\+event}]{events\mbox{[}$\,$\mbox{]},  }\item[{int}]{max,  }\item[{int}]{timeout }\end{DoxyParamCaption}) const}
+
+
+
+等待所关注输入输出事件的发生 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em $>$0} & 处于就绪状态的文件描述符数 \\
+\hline
+{\em 0} & 超时 \\
+\hline
+{\em -\/1} & 失败 \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em events} & 事件描述结构数组 \\
+\hline
+\mbox{\tt in}  & {\em max} & 事件描述结构数组容量 \\
+\hline
+\mbox{\tt in}  & {\em timeout} & 超时毫秒数，0立即超时，-\/1无限超时 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_multi_io_8h}{Multi\+Io.\+h}\item 
+src/\hyperlink{_multi_io_8cpp}{Multi\+Io.\+cpp}\end{DoxyCompactItemize}

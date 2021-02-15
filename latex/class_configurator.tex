@@ -1,0 +1,107 @@
+\hypertarget{class_configurator}{}\section{Configurator Class Reference}
+\label{class_configurator}\index{Configurator@{Configurator}}
+
+
+配置器  
+
+
+
+
+{\ttfamily \#include $<$Configurator.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_configurator_a8755c4fd8511b54067af1f1ac78ba18c}\label{class_configurator_a8755c4fd8511b54067af1f1ac78ba18c}} 
+\hyperlink{class_configurator_a8755c4fd8511b54067af1f1ac78ba18c}{Configurator} (void)
+\begin{DoxyCompactList}\small\item\em 构造器 \end{DoxyCompactList}\item 
+void \hyperlink{class_configurator_a5c8b62b3619de64a81b3877a4498f6d8}{load} (string const \&cfg\+File)
+\begin{DoxyCompactList}\small\item\em 从指定的配置文件中加载配置信息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_configurator_a48b66a5bd8038dd8a186c295111ed7ce}{m\+\_\+log\+Level}
+\begin{DoxyCompactList}\small\item\em 最低日志等级 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_adac0a4036fa93d7ea780e586befd5d32}\label{class_configurator_adac0a4036fa93d7ea780e586befd5d32}} 
+string \hyperlink{class_configurator_adac0a4036fa93d7ea780e586befd5d32}{m\+\_\+log\+File}
+\begin{DoxyCompactList}\small\item\em 日志文件路径 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_a70acfa6e6928b1aab0ae7c9444b1a46e}\label{class_configurator_a70acfa6e6928b1aab0ae7c9444b1a46e}} 
+int \hyperlink{class_configurator_a70acfa6e6928b1aab0ae7c9444b1a46e}{m\+\_\+max\+Jobs}
+\begin{DoxyCompactList}\small\item\em 最大抓取任务数，0表示不抓取，-\/1表示无限抓取 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_a20f4111bbd490936746422cb57cf72bd}\label{class_configurator_a20f4111bbd490936746422cb57cf72bd}} 
+int \hyperlink{class_configurator_a20f4111bbd490936746422cb57cf72bd}{m\+\_\+max\+Depth}
+\begin{DoxyCompactList}\small\item\em 最大递归深度，种子深度为0，之后逐层递增，-\/1表示无限深度 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_a219d7b0dc18eb5b11fdbc5c0f83da32c}\label{class_configurator_a219d7b0dc18eb5b11fdbc5c0f83da32c}} 
+int \hyperlink{class_configurator_a219d7b0dc18eb5b11fdbc5c0f83da32c}{m\+\_\+max\+Raw\+Urls}
+\begin{DoxyCompactList}\small\item\em 原始统一资源定位符队列最大容量，-\/1表示无限大 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_a3d64cd25dbfee1edf4d26fd642b629f3}\label{class_configurator_a3d64cd25dbfee1edf4d26fd642b629f3}} 
+int \hyperlink{class_configurator_a3d64cd25dbfee1edf4d26fd642b629f3}{m\+\_\+max\+Dns\+Urls}
+\begin{DoxyCompactList}\small\item\em 解析统一资源定位符队列最大容量，-\/1表示无限大 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_abf473e476241dd69d7a0b3373f35f8dd}\label{class_configurator_abf473e476241dd69d7a0b3373f35f8dd}} 
+long \hyperlink{class_configurator_abf473e476241dd69d7a0b3373f35f8dd}{m\+\_\+stat\+Interval}
+\begin{DoxyCompactList}\small\item\em 状态间隔，即状态定时器的周期秒数，0表示不设定时器 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_ac9c2b18d9fba05948495f793fdf66124}\label{class_configurator_ac9c2b18d9fba05948495f793fdf66124}} 
+string \hyperlink{class_configurator_ac9c2b18d9fba05948495f793fdf66124}{m\+\_\+seeds}
+\begin{DoxyCompactList}\small\item\em 种子链接，多个链接以逗号隔开 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_a26310ca9cf9ee2757b6e5e145205d4b7}\label{class_configurator_a26310ca9cf9ee2757b6e5e145205d4b7}} 
+string \hyperlink{class_configurator_a26310ca9cf9ee2757b6e5e145205d4b7}{m\+\_\+include\+Prefixes}
+\begin{DoxyCompactList}\small\item\em 包含前缀，只抓取带有这些前缀的\+U\+R\+L，多个前缀以逗号隔开 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_a4a88e7daaeffed59739ed8ec7619f3b7}\label{class_configurator_a4a88e7daaeffed59739ed8ec7619f3b7}} 
+string \hyperlink{class_configurator_a4a88e7daaeffed59739ed8ec7619f3b7}{m\+\_\+exclude\+Prefixes}
+\begin{DoxyCompactList}\small\item\em 排除前缀，不抓取带有这些前缀的\+U\+R\+L，多个前缀以逗号隔开 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_ad85f230b1fb317a9067769d8ab64805d}\label{class_configurator_ad85f230b1fb317a9067769d8ab64805d}} 
+string \hyperlink{class_configurator_ad85f230b1fb317a9067769d8ab64805d}{m\+\_\+plugins\+Path}
+\begin{DoxyCompactList}\small\item\em 插件路径 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_ade960dc8653e08ba447b18fa1561cbef}\label{class_configurator_ade960dc8653e08ba447b18fa1561cbef}} 
+vector$<$ string $>$ \hyperlink{class_configurator_ade960dc8653e08ba447b18fa1561cbef}{m\+\_\+load\+Plugins}
+\begin{DoxyCompactList}\small\item\em 插件列表 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_configurator_a6683f77519f28b12e3296a4457da502b}\label{class_configurator_a6683f77519f28b12e3296a4457da502b}} 
+vector$<$ string $>$ \hyperlink{class_configurator_a6683f77519f28b12e3296a4457da502b}{m\+\_\+accept\+Types}
+\begin{DoxyCompactList}\small\item\em 接受类型 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+配置器 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_configurator_a5c8b62b3619de64a81b3877a4498f6d8}\label{class_configurator_a5c8b62b3619de64a81b3877a4498f6d8}} 
+\index{Configurator@{Configurator}!load@{load}}
+\index{load@{load}!Configurator@{Configurator}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Configurator\+::load (\begin{DoxyParamCaption}\item[{string const \&}]{cfg\+File }\end{DoxyParamCaption})}
+
+
+
+从指定的配置文件中加载配置信息 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cfg\+File} & 配置文件路径 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_configurator_a48b66a5bd8038dd8a186c295111ed7ce}\label{class_configurator_a48b66a5bd8038dd8a186c295111ed7ce}} 
+\index{Configurator@{Configurator}!m\+\_\+log\+Level@{m\+\_\+log\+Level}}
+\index{m\+\_\+log\+Level@{m\+\_\+log\+Level}!Configurator@{Configurator}}
+\subsubsection{\texorpdfstring{m\+\_\+log\+Level}{m\_logLevel}}
+{\footnotesize\ttfamily int Configurator\+::m\+\_\+log\+Level}
+
+
+
+最低日志等级 
+
+从低到高依次为：
+\begin{DoxyItemize}
+\item 0 -\/ 调试
+\item 1 -\/ 信息
+\item 2 -\/ 警告
+\item 3 -\/ 错误
+\item 4 -\/ 致命
+\end{DoxyItemize}系统将记录所有不低于指定等级的日志信息 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_configurator_8h}{Configurator.\+h}\item 
+src/\hyperlink{_configurator_8cpp}{Configurator.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{class_str_kit}{}\section{Str\+Kit Class Reference}
+\label{class_str_kit}\index{Str\+Kit@{Str\+Kit}}
+
+
+字符串工具包  
+
+
+
+
+{\ttfamily \#include $<$Str\+Kit.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{class_str_kit_a7d9fff4cf9f64dc5abdf98ce32459e57}{strcat} (char const $\ast$str1, char const $\ast$str2,...)
+\begin{DoxyCompactList}\small\item\em 字符串拼接 \end{DoxyCompactList}\item 
+static string \& \hyperlink{class_str_kit_a562291e7c2bd405694de39f208b311da}{trim} (string \&str)
+\begin{DoxyCompactList}\small\item\em 字符串修剪 \end{DoxyCompactList}\item 
+static vector$<$ string $>$ \hyperlink{class_str_kit_a3546933e78dddcef98e7e17fd3a3a442}{split} (string const \&str, string const \&delim, int limit=0)
+\begin{DoxyCompactList}\small\item\em 字符串拆分 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+字符串工具包 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_str_kit_a3546933e78dddcef98e7e17fd3a3a442}\label{class_str_kit_a3546933e78dddcef98e7e17fd3a3a442}} 
+\index{Str\+Kit@{Str\+Kit}!split@{split}}
+\index{split@{split}!Str\+Kit@{Str\+Kit}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Str\+Kit\+::split (\begin{DoxyParamCaption}\item[{string const \&}]{str,  }\item[{string const \&}]{delim,  }\item[{int}]{limit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+字符串拆分 
+
+\begin{DoxyReturn}{Returns}
+被拆分出的子串向量 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+以delim中的字符作为分隔符，对str字符串进行拆分，并对每个被拆分出的子串做修剪，拆分次数不超过limit，除非该参数的值为0 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & 待拆分字符串 \\
+\hline
+\mbox{\tt in}  & {\em delim} & 分隔符字符串 \\
+\hline
+\mbox{\tt in}  & {\em limit} & 拆分次数限制 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_str_kit_a7d9fff4cf9f64dc5abdf98ce32459e57}\label{class_str_kit_a7d9fff4cf9f64dc5abdf98ce32459e57}} 
+\index{Str\+Kit@{Str\+Kit}!strcat@{strcat}}
+\index{strcat@{strcat}!Str\+Kit@{Str\+Kit}}
+\subsubsection{\texorpdfstring{strcat()}{strcat()}}
+{\footnotesize\ttfamily string Str\+Kit\+::strcat (\begin{DoxyParamCaption}\item[{char const $\ast$}]{str1,  }\item[{char const $\ast$}]{str2,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+字符串拼接 
+
+\begin{DoxyReturn}{Returns}
+拼接后的字符串 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str1} & 字符串1 \\
+\hline
+\mbox{\tt in}  & {\em str2} & 字符串2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_str_kit_a562291e7c2bd405694de39f208b311da}\label{class_str_kit_a562291e7c2bd405694de39f208b311da}} 
+\index{Str\+Kit@{Str\+Kit}!trim@{trim}}
+\index{trim@{trim}!Str\+Kit@{Str\+Kit}}
+\subsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily string \& Str\+Kit\+::trim (\begin{DoxyParamCaption}\item[{string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+字符串修剪 
+
+\begin{DoxyReturn}{Returns}
+被修剪过的参数字符串本身 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+截去字符串的首尾空白字符(空格、制表、回车、换行等) 
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em str} & 待修剪字符串 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_str_kit_8h}{Str\+Kit.\+h}\item 
+src/\hyperlink{_str_kit_8cpp}{Str\+Kit.\+cpp}\end{DoxyCompactItemize}

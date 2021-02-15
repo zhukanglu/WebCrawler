@@ -1,0 +1,244 @@
+\hypertarget{class_url_queues}{}\section{Url\+Queues Class Reference}
+\label{class_url_queues}\index{Url\+Queues@{Url\+Queues}}
+
+
+统一资源定位符队列  
+
+
+
+
+{\ttfamily \#include $<$Url\+Queues.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_url_queues_a9761fc84cfd4bf6188a73229873fafd5}{Url\+Queues} (\hyperlink{class_url_filter}{Url\+Filter} \&filter)
+\begin{DoxyCompactList}\small\item\em 构造器 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_url_queues_aba370529b8c0cf49d068b1f5d5edafa0}\label{class_url_queues_aba370529b8c0cf49d068b1f5d5edafa0}} 
+\hyperlink{class_url_queues_aba370529b8c0cf49d068b1f5d5edafa0}{$\sim$\+Url\+Queues} (void)
+\begin{DoxyCompactList}\small\item\em 析构器 \end{DoxyCompactList}\item 
+void \hyperlink{class_url_queues_a9649c30b72bdb4092732e505e4041e83}{push\+Raw\+Url} (\hyperlink{class_raw_url}{Raw\+Url} const \&raw\+Url)
+\begin{DoxyCompactList}\small\item\em 压入原始统一资源定位符 \end{DoxyCompactList}\item 
+\hyperlink{class_raw_url}{Raw\+Url} \hyperlink{class_url_queues_a8ceb4d6d67ce3b4afc7f0325ec254140}{pop\+Raw\+Url} (void)
+\begin{DoxyCompactList}\small\item\em 弹出原始统一资源定位符 \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_url_queues_a713458484da28e9ada936ccc268413b3}{size\+Raw\+Url} (void) const
+\begin{DoxyCompactList}\small\item\em 获取原始统一资源定位符数 \end{DoxyCompactList}\item 
+bool \hyperlink{class_url_queues_af01992d66f4979e74e5c6661c76cbc1a}{empty\+Raw\+Url} (void) const
+\begin{DoxyCompactList}\small\item\em 原始统一资源定位符队列空否 \end{DoxyCompactList}\item 
+bool \hyperlink{class_url_queues_aaf6b48955b4ab667301188c48265506e}{full\+Raw\+Url} (void) const
+\begin{DoxyCompactList}\small\item\em 原始统一资源定位符队列满否 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_url_queues_a0b751864e21212cd2f8d8bf7b707507b}\label{class_url_queues_a0b751864e21212cd2f8d8bf7b707507b}} 
+void \hyperlink{class_url_queues_a0b751864e21212cd2f8d8bf7b707507b}{clear\+Raw\+Url} (void)
+\begin{DoxyCompactList}\small\item\em 清空原始统一资源定位符队列 \end{DoxyCompactList}\item 
+void \hyperlink{class_url_queues_a4c7902b3c7ddd5c9758dbd0e5085ad18}{push\+Dns\+Url} (\hyperlink{class_dns_url}{Dns\+Url} const \&dns\+Url)
+\begin{DoxyCompactList}\small\item\em 压入解析统一资源定位符 \end{DoxyCompactList}\item 
+\hyperlink{class_dns_url}{Dns\+Url} \hyperlink{class_url_queues_ae42bc6d47ae51b0c02a0360f05bf0770}{pop\+Dns\+Url} (void)
+\begin{DoxyCompactList}\small\item\em 弹出解析统一资源定位符 \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_url_queues_a65b094e4cd9f54ce9019b4045dd0e6da}{size\+Dns\+Url} (void) const
+\begin{DoxyCompactList}\small\item\em 获取解析统一资源定位符数 \end{DoxyCompactList}\item 
+bool \hyperlink{class_url_queues_adde4a7863750a113ba7e4da686bbf93c}{empty\+Dns\+Url} (void) const
+\begin{DoxyCompactList}\small\item\em 解析统一资源定位符队列空否 \end{DoxyCompactList}\item 
+bool \hyperlink{class_url_queues_a60ae6e63c4dcd998e0adfa9edf530509}{full\+Dns\+Url} (void) const
+\begin{DoxyCompactList}\small\item\em 解析统一资源定位符队列满否 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_url_queues_a136b3156b923cb0ceb7ef8577fd71d4f}\label{class_url_queues_a136b3156b923cb0ceb7ef8577fd71d4f}} 
+void \hyperlink{class_url_queues_a136b3156b923cb0ceb7ef8577fd71d4f}{clear\+Dns\+Url} (void)
+\begin{DoxyCompactList}\small\item\em 清空解析统一资源定位符队列 \end{DoxyCompactList}\item 
+void \hyperlink{class_url_queues_a1f82f08afb7279075f3bef674b383bf4}{extract\+Url} (char const $\ast$html, \hyperlink{class_dns_url}{Dns\+Url} const \&dns\+Url)
+\begin{DoxyCompactList}\small\item\em 从超文本标记语言页面内容中抽取统一资源定位符 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+统一资源定位符队列 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_url_queues_a9761fc84cfd4bf6188a73229873fafd5}\label{class_url_queues_a9761fc84cfd4bf6188a73229873fafd5}} 
+\index{Url\+Queues@{Url\+Queues}!Url\+Queues@{Url\+Queues}}
+\index{Url\+Queues@{Url\+Queues}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{Url\+Queues()}{UrlQueues()}}
+{\footnotesize\ttfamily Url\+Queues\+::\+Url\+Queues (\begin{DoxyParamCaption}\item[{\hyperlink{class_url_filter}{Url\+Filter} \&}]{filter }\end{DoxyParamCaption})}
+
+
+
+构造器 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filter} & 统一资源定位符过滤器 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_url_queues_adde4a7863750a113ba7e4da686bbf93c}\label{class_url_queues_adde4a7863750a113ba7e4da686bbf93c}} 
+\index{Url\+Queues@{Url\+Queues}!empty\+Dns\+Url@{empty\+Dns\+Url}}
+\index{empty\+Dns\+Url@{empty\+Dns\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{empty\+Dns\+Url()}{emptyDnsUrl()}}
+{\footnotesize\ttfamily bool Url\+Queues\+::empty\+Dns\+Url (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+解析统一资源定位符队列空否 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 空 \\
+\hline
+{\em false} & 不空 \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_url_queues_af01992d66f4979e74e5c6661c76cbc1a}\label{class_url_queues_af01992d66f4979e74e5c6661c76cbc1a}} 
+\index{Url\+Queues@{Url\+Queues}!empty\+Raw\+Url@{empty\+Raw\+Url}}
+\index{empty\+Raw\+Url@{empty\+Raw\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{empty\+Raw\+Url()}{emptyRawUrl()}}
+{\footnotesize\ttfamily bool Url\+Queues\+::empty\+Raw\+Url (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+原始统一资源定位符队列空否 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 空 \\
+\hline
+{\em false} & 不空\\
+\hline
+\end{DoxyRetVals}
+原始统一资源定位符队列空否 空返回true，不空返回false \mbox{\Hypertarget{class_url_queues_a1f82f08afb7279075f3bef674b383bf4}\label{class_url_queues_a1f82f08afb7279075f3bef674b383bf4}} 
+\index{Url\+Queues@{Url\+Queues}!extract\+Url@{extract\+Url}}
+\index{extract\+Url@{extract\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{extract\+Url()}{extractUrl()}}
+{\footnotesize\ttfamily void Url\+Queues\+::extract\+Url (\begin{DoxyParamCaption}\item[{char const $\ast$}]{html,  }\item[{\hyperlink{class_dns_url}{Dns\+Url} const \&}]{dns\+Url }\end{DoxyParamCaption})}
+
+
+
+从超文本标记语言页面内容中抽取统一资源定位符 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em html} & 超文本标记语言页面内容字符串 \\
+\hline
+\mbox{\tt in}  & {\em dns\+Url} & 被抽取页面解析统一资源定位符 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_url_queues_a60ae6e63c4dcd998e0adfa9edf530509}\label{class_url_queues_a60ae6e63c4dcd998e0adfa9edf530509}} 
+\index{Url\+Queues@{Url\+Queues}!full\+Dns\+Url@{full\+Dns\+Url}}
+\index{full\+Dns\+Url@{full\+Dns\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{full\+Dns\+Url()}{fullDnsUrl()}}
+{\footnotesize\ttfamily bool Url\+Queues\+::full\+Dns\+Url (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+解析统一资源定位符队列满否 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 满 \\
+\hline
+{\em false} & 不满 \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_url_queues_aaf6b48955b4ab667301188c48265506e}\label{class_url_queues_aaf6b48955b4ab667301188c48265506e}} 
+\index{Url\+Queues@{Url\+Queues}!full\+Raw\+Url@{full\+Raw\+Url}}
+\index{full\+Raw\+Url@{full\+Raw\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{full\+Raw\+Url()}{fullRawUrl()}}
+{\footnotesize\ttfamily bool Url\+Queues\+::full\+Raw\+Url (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+原始统一资源定位符队列满否 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & 满 \\
+\hline
+{\em false} & 不满 \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_url_queues_ae42bc6d47ae51b0c02a0360f05bf0770}\label{class_url_queues_ae42bc6d47ae51b0c02a0360f05bf0770}} 
+\index{Url\+Queues@{Url\+Queues}!pop\+Dns\+Url@{pop\+Dns\+Url}}
+\index{pop\+Dns\+Url@{pop\+Dns\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{pop\+Dns\+Url()}{popDnsUrl()}}
+{\footnotesize\ttfamily \hyperlink{class_dns_url}{Dns\+Url} Url\+Queues\+::pop\+Dns\+Url (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+弹出解析统一资源定位符 
+
+\begin{DoxyReturn}{Returns}
+解析统一资源定位符 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_url_queues_a8ceb4d6d67ce3b4afc7f0325ec254140}\label{class_url_queues_a8ceb4d6d67ce3b4afc7f0325ec254140}} 
+\index{Url\+Queues@{Url\+Queues}!pop\+Raw\+Url@{pop\+Raw\+Url}}
+\index{pop\+Raw\+Url@{pop\+Raw\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{pop\+Raw\+Url()}{popRawUrl()}}
+{\footnotesize\ttfamily \hyperlink{class_raw_url}{Raw\+Url} Url\+Queues\+::pop\+Raw\+Url (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+弹出原始统一资源定位符 
+
+\begin{DoxyReturn}{Returns}
+原始统一资源定位符 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_url_queues_a4c7902b3c7ddd5c9758dbd0e5085ad18}\label{class_url_queues_a4c7902b3c7ddd5c9758dbd0e5085ad18}} 
+\index{Url\+Queues@{Url\+Queues}!push\+Dns\+Url@{push\+Dns\+Url}}
+\index{push\+Dns\+Url@{push\+Dns\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{push\+Dns\+Url()}{pushDnsUrl()}}
+{\footnotesize\ttfamily void Url\+Queues\+::push\+Dns\+Url (\begin{DoxyParamCaption}\item[{\hyperlink{class_dns_url}{Dns\+Url} const \&}]{dns\+Url }\end{DoxyParamCaption})}
+
+
+
+压入解析统一资源定位符 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dns\+Url} & 解析统一资源定位符 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_url_queues_a9649c30b72bdb4092732e505e4041e83}\label{class_url_queues_a9649c30b72bdb4092732e505e4041e83}} 
+\index{Url\+Queues@{Url\+Queues}!push\+Raw\+Url@{push\+Raw\+Url}}
+\index{push\+Raw\+Url@{push\+Raw\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{push\+Raw\+Url()}{pushRawUrl()}}
+{\footnotesize\ttfamily void Url\+Queues\+::push\+Raw\+Url (\begin{DoxyParamCaption}\item[{\hyperlink{class_raw_url}{Raw\+Url} const \&}]{raw\+Url }\end{DoxyParamCaption})}
+
+
+
+压入原始统一资源定位符 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em raw\+Url} & 原始统一资源定位符 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_url_queues_a65b094e4cd9f54ce9019b4045dd0e6da}\label{class_url_queues_a65b094e4cd9f54ce9019b4045dd0e6da}} 
+\index{Url\+Queues@{Url\+Queues}!size\+Dns\+Url@{size\+Dns\+Url}}
+\index{size\+Dns\+Url@{size\+Dns\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{size\+Dns\+Url()}{sizeDnsUrl()}}
+{\footnotesize\ttfamily size\+\_\+t Url\+Queues\+::size\+Dns\+Url (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+获取解析统一资源定位符数 
+
+\begin{DoxyReturn}{Returns}
+解析统一资源定位符数 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_url_queues_a713458484da28e9ada936ccc268413b3}\label{class_url_queues_a713458484da28e9ada936ccc268413b3}} 
+\index{Url\+Queues@{Url\+Queues}!size\+Raw\+Url@{size\+Raw\+Url}}
+\index{size\+Raw\+Url@{size\+Raw\+Url}!Url\+Queues@{Url\+Queues}}
+\subsubsection{\texorpdfstring{size\+Raw\+Url()}{sizeRawUrl()}}
+{\footnotesize\ttfamily size\+\_\+t Url\+Queues\+::size\+Raw\+Url (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+获取原始统一资源定位符数 
+
+\begin{DoxyReturn}{Returns}
+原始统一资源定位符数 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_url_queues_8h}{Url\+Queues.\+h}\item 
+src/\hyperlink{_url_queues_8cpp}{Url\+Queues.\+cpp}\end{DoxyCompactItemize}
